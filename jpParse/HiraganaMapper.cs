@@ -19,7 +19,29 @@ namespace battousai.jpParse
             { JapaneseSyllable.Ku, "く" },
             { JapaneseSyllable.Ke, "け" },
             { JapaneseSyllable.Ko, "こ" },
-            { JapaneseSyllable.Kou, "こう" }
+            { JapaneseSyllable.Kou, "こう" },
+
+            { JapaneseSyllable.Ga, "が" },
+            { JapaneseSyllable.Gi, "ぎ" },
+            { JapaneseSyllable.Gu, "ぐ" },
+            { JapaneseSyllable.Ge, "げ" },
+            { JapaneseSyllable.Go, "ご" },
+            { JapaneseSyllable.Gou, "ごう" },
+
+            { JapaneseSyllable.Ta, "た" },
+            { JapaneseSyllable.Chi, "ち" },
+            { JapaneseSyllable.Tsu, "つ" },
+            { JapaneseSyllable.Te, "て" },
+            { JapaneseSyllable.To, "と" },
+            { JapaneseSyllable.Tou, "とう" },
+
+            { JapaneseSyllable.Da, "だ" },
+            { JapaneseSyllable.Di, "ぢ" },
+            { JapaneseSyllable.Du, "づ" },
+            { JapaneseSyllable.De, "で" },
+            { JapaneseSyllable.Do, "ど" },
+            { JapaneseSyllable.Dou, "どう" },
+
         };
 
         public static string Map(JapaneseSyllable syllable)

@@ -29,7 +29,9 @@ namespace battousai.jpParse
         }
 
         private static readonly Parser<JapaneseSyllable> longOSyllables = Parse.String("kou").Select(x => JapaneseSyllable.Kou)
-            .Or(Parse.String("gou").Select(x => JapaneseSyllable.Gou));
+            .Or(Parse.String("gou").Select(x => JapaneseSyllable.Gou))
+            .Or(Parse.String("tou").Select(x => JapaneseSyllable.Tou))
+            .Or(Parse.String("dou").Select(x => JapaneseSyllable.Dou));
 
         private static readonly Parser<JapaneseSyllable> shortSyllables =
             Parse.String("a").Select(x => JapaneseSyllable.A)
@@ -74,9 +76,15 @@ namespace battousai.jpParse
             .Or(tSyllables)
             .Or(dSyllables);
 
-        private static readonly Parser<Term> Term = Syllable.Many().Select(x => new Term { Syllables = x });
+        private static readonly Parser<Term> Term = Syllable.AtLeastOnce().Select(x => new Term { Syllables = x });
 
-        private static readonly Parser<TermSet> Terms = Term.Many().Select(x => new TermSet { Terms = x });
+        private static readonly Parser<Term> TermWithSeparator =
+            from sp in Parse.WhiteSpace
+            from term in Term
+            select term;
+
+        private static readonly Parser<TermSet> Terms =
+            (Term.Or(TermWithSeparator)).Many().Select(x => new TermSet { Terms = x });
     }
 
     public class TermSet

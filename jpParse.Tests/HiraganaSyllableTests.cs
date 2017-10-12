@@ -245,5 +245,13 @@ namespace jpParse_core.Tests
 
             Assert.Equal("あこ", value);
         }
+
+        [Fact]
+        public void CanParseMultipleWords()
+        {
+            var value = NihonParser.ToHiragana("atoka itedo");
+
+            Assert.Equal("あとか いてど", value);
+        }
     }
 }

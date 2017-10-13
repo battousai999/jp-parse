@@ -68,13 +68,29 @@ namespace battousai.jpParse
             .Or(Parse.String("de").Select(x => JapaneseSyllable.De))
             .Or(Parse.String("do").Select(x => JapaneseSyllable.Do));
 
+        private static readonly Parser<JapaneseSyllable> sSyllables =
+            Parse.String("sa").Select(x => JapaneseSyllable.Sa)
+            .Or(Parse.String("shi").Select(x => JapaneseSyllable.Shi))
+            .Or(Parse.String("su").Select(x => JapaneseSyllable.Su))
+            .Or(Parse.String("se").Select(x => JapaneseSyllable.Se))
+            .Or(Parse.String("so").Select(x => JapaneseSyllable.So));
+
+        private static readonly Parser<JapaneseSyllable> zSyllables =
+            Parse.String("za").Select(x => JapaneseSyllable.Za)
+            .Or(Parse.String("ji").Select(x => JapaneseSyllable.Ji))
+            .Or(Parse.String("zu").Select(x => JapaneseSyllable.Zu))
+            .Or(Parse.String("ze").Select(x => JapaneseSyllable.Ze))
+            .Or(Parse.String("zo").Select(x => JapaneseSyllable.Zo));
+
         private static readonly Parser<JapaneseSyllable> Syllable =
             longOSyllables
             .Or(shortSyllables)
             .Or(kSyllables)
             .Or(gSyllables)
             .Or(tSyllables)
-            .Or(dSyllables);
+            .Or(dSyllables)
+            .Or(sSyllables)
+            .Or(zSyllables);
 
         private static readonly Parser<Term> Term = Syllable.AtLeastOnce().Select(x => new Term { Syllables = x });
 

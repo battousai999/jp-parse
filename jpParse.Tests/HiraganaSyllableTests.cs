@@ -7,7 +7,7 @@ namespace jpParse_core.Tests
     public class HiraganaSyllableTests
     {
         [Fact]
-        public void CanParseA()
+        public void CanParse_A()
         {
             var value = NihonParser.ToHiragana("a");
 
@@ -15,7 +15,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseI()
+        public void CanParse_I()
         {
             var value = NihonParser.ToHiragana("i");
 
@@ -23,7 +23,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseU()
+        public void CanParse_U()
         {
             var value = NihonParser.ToHiragana("u");
 
@@ -31,7 +31,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseE()
+        public void CanParse_E()
         {
             var value = NihonParser.ToHiragana("e");
 
@@ -39,7 +39,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseO()
+        public void CanParse_O()
         {
             var value = NihonParser.ToHiragana("o");
 
@@ -47,7 +47,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseKa()
+        public void CanParse_Ka()
         {
             var value = NihonParser.ToHiragana("ka");
 
@@ -55,7 +55,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseKi()
+        public void CanParse_Ki()
         {
             var value = NihonParser.ToHiragana("ki");
 
@@ -63,7 +63,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseKu()
+        public void CanParse_Ku()
         {
             var value = NihonParser.ToHiragana("ku");
 
@@ -71,7 +71,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseKe()
+        public void CanParse_Ke()
         {
             var value = NihonParser.ToHiragana("ke");
 
@@ -79,7 +79,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseKo()
+        public void CanParse_Ko()
         {
             var value = NihonParser.ToHiragana("ko");
 
@@ -87,7 +87,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseKou()
+        public void CanParse_Kou()
         {
             var value = NihonParser.ToHiragana("kou");
 
@@ -95,7 +95,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseGa()
+        public void CanParse_Ga()
         {
             var value = NihonParser.ToHiragana("ga");
 
@@ -103,7 +103,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseGi()
+        public void CanParse_Gi()
         {
             var value = NihonParser.ToHiragana("gi");
 
@@ -111,7 +111,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseGu()
+        public void CanParse_Gu()
         {
             var value = NihonParser.ToHiragana("gu");
 
@@ -119,7 +119,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseGe()
+        public void CanParse_Ge()
         {
             var value = NihonParser.ToHiragana("ge");
 
@@ -127,7 +127,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseGo()
+        public void CanParse_Go()
         {
             var value = NihonParser.ToHiragana("go");
 
@@ -135,7 +135,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseGou()
+        public void CanParse_Gou()
         {
             var value = NihonParser.ToHiragana("gou");
 
@@ -143,7 +143,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseTa()
+        public void CanParse_Ta()
         {
             var value = NihonParser.ToHiragana("ta");
 
@@ -151,7 +151,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseChi()
+        public void CanParse_Chi()
         {
             var value = NihonParser.ToHiragana("chi");
 
@@ -159,7 +159,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseTsu()
+        public void CanParse_Tsu()
         {
             var value = NihonParser.ToHiragana("tsu");
 
@@ -167,7 +167,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseTe()
+        public void CanParse_Te()
         {
             var value = NihonParser.ToHiragana("te");
 
@@ -175,7 +175,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseTo()
+        public void CanParse_To()
         {
             var value = NihonParser.ToHiragana("to");
 
@@ -183,7 +183,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseTou()
+        public void CanParse_Tou()
         {
             var value = NihonParser.ToHiragana("tou");
 
@@ -191,7 +191,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseDa()
+        public void CanParse_Da()
         {
             var value = NihonParser.ToHiragana("da");
 
@@ -199,7 +199,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseDi()
+        public void CanParse_Di()
         {
             var value = NihonParser.ToHiragana("di");
 
@@ -207,7 +207,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseDu()
+        public void CanParse_Du()
         {
             var value = NihonParser.ToHiragana("du");
 
@@ -215,7 +215,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseDe()
+        public void CanParse_De()
         {
             var value = NihonParser.ToHiragana("de");
 
@@ -223,7 +223,7 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseDo()
+        public void CanParse_Do()
         {
             var value = NihonParser.ToHiragana("do");
 
@@ -231,11 +231,107 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
-        public void CanParseDou()
+        public void CanParse_Dou()
         {
             var value = NihonParser.ToHiragana("dou");
 
             Assert.Equal("どう", value);
+        }
+
+        [Fact]
+        public void CanParse_Sa()
+        {
+            var value = NihonParser.ToHiragana("sa");
+
+            Assert.Equal("さ", value);
+        }
+
+        [Fact]
+        public void CanParse_Shi()
+        {
+            var value = NihonParser.ToHiragana("shi");
+
+            Assert.Equal("し", value);
+        }
+
+        [Fact]
+        public void CanParse_Su()
+        {
+            var value = NihonParser.ToHiragana("su");
+
+            Assert.Equal("す", value);
+        }
+
+        [Fact]
+        public void CanParse_Se()
+        {
+            var value = NihonParser.ToHiragana("se");
+
+            Assert.Equal("せ", value);
+        }
+
+        [Fact]
+        public void CanParse_So()
+        {
+            var value = NihonParser.ToHiragana("so");
+
+            Assert.Equal("そ", value);
+        }
+
+        [Fact]
+        public void CanParse_Sou()
+        {
+            var value = NihonParser.ToHiragana("sou");
+
+            Assert.Equal("そう", value);
+        }
+
+        [Fact]
+        public void CanParse_Za()
+        {
+            var value = NihonParser.ToHiragana("za");
+
+            Assert.Equal("ざ", value);
+        }
+
+        [Fact]
+        public void CanParse_Ji()
+        {
+            var value = NihonParser.ToHiragana("ji");
+
+            Assert.Equal("じ", value);
+        }
+
+        [Fact]
+        public void CanParse_Zu()
+        {
+            var value = NihonParser.ToHiragana("zu");
+
+            Assert.Equal("ず", value);
+        }
+
+        [Fact]
+        public void CanParse_Ze()
+        {
+            var value = NihonParser.ToHiragana("ze");
+
+            Assert.Equal("ぜ", value);
+        }
+
+        [Fact]
+        public void CanParse_Zo()
+        {
+            var value = NihonParser.ToHiragana("zo");
+
+            Assert.Equal("ぞ", value);
+        }
+
+        [Fact]
+        public void CanParse_Zou()
+        {
+            var value = NihonParser.ToHiragana("zou");
+
+            Assert.Equal("ぞう", value);
         }
 
         [Fact]

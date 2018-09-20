@@ -31,7 +31,16 @@ namespace battousai.jpParse
         private static readonly Parser<JapaneseSyllable> longOSyllables = Parse.String("kou").Select(x => JapaneseSyllable.Kou)
             .Or(Parse.String("gou").Select(x => JapaneseSyllable.Gou))
             .Or(Parse.String("tou").Select(x => JapaneseSyllable.Tou))
-            .Or(Parse.String("dou").Select(x => JapaneseSyllable.Dou));
+            .Or(Parse.String("dou").Select(x => JapaneseSyllable.Dou))
+            .Or(Parse.String("sou").Select(x => JapaneseSyllable.Sou))
+            .Or(Parse.String("zou").Select(x => JapaneseSyllable.Zou))
+            .Or(Parse.String("nou").Select(x => JapaneseSyllable.Nou))
+            .Or(Parse.String("hou").Select(x => JapaneseSyllable.Hou))
+            .Or(Parse.String("bou").Select(x => JapaneseSyllable.Bou))
+            .Or(Parse.String("pou").Select(x => JapaneseSyllable.Pou))
+            .Or(Parse.String("mou").Select(x => JapaneseSyllable.Mou))
+            .Or(Parse.String("rou").Select(x => JapaneseSyllable.Rou))
+            .Or(Parse.String("you").Select(x => JapaneseSyllable.You));
 
         private static readonly Parser<JapaneseSyllable> shortSyllables =
             Parse.String("a").Select(x => JapaneseSyllable.A)
@@ -82,15 +91,78 @@ namespace battousai.jpParse
             .Or(Parse.String("ze").Select(x => JapaneseSyllable.Ze))
             .Or(Parse.String("zo").Select(x => JapaneseSyllable.Zo));
 
+        private static readonly Parser<JapaneseSyllable> nSyllables =
+            Parse.String("na").Select(x => JapaneseSyllable.Na)
+            .Or(Parse.String("ni").Select(x => JapaneseSyllable.Ni))
+            .Or(Parse.String("nu").Select(x => JapaneseSyllable.Nu))
+            .Or(Parse.String("ne").Select(x => JapaneseSyllable.Ne))
+            .Or(Parse.String("no").Select(x => JapaneseSyllable.No));
+
+        private static readonly Parser<JapaneseSyllable> hSyllables =
+            Parse.String("ha").Select(x => JapaneseSyllable.Ha)
+            .Or(Parse.String("hi").Select(x => JapaneseSyllable.Hi))
+            .Or(Parse.String("fu").Select(x => JapaneseSyllable.Fu))
+            .Or(Parse.String("he").Select(x => JapaneseSyllable.He))
+            .Or(Parse.String("ho").Select(x => JapaneseSyllable.Ho));
+
+        private static readonly Parser<JapaneseSyllable> bSyllables =
+            Parse.String("ba").Select(x => JapaneseSyllable.Ba)
+            .Or(Parse.String("bi").Select(x => JapaneseSyllable.Bi))
+            .Or(Parse.String("bu").Select(x => JapaneseSyllable.Bu))
+            .Or(Parse.String("be").Select(x => JapaneseSyllable.Be))
+            .Or(Parse.String("bo").Select(x => JapaneseSyllable.Bo));
+
+        private static readonly Parser<JapaneseSyllable> pSyllables =
+            Parse.String("pa").Select(x => JapaneseSyllable.Pa)
+            .Or(Parse.String("pi").Select(x => JapaneseSyllable.Pi))
+            .Or(Parse.String("pu").Select(x => JapaneseSyllable.Pu))
+            .Or(Parse.String("pe").Select(x => JapaneseSyllable.Pe))
+            .Or(Parse.String("po").Select(x => JapaneseSyllable.Po));
+
+        private static readonly Parser<JapaneseSyllable> mSyllables =
+            Parse.String("ma").Select(x => JapaneseSyllable.Ma)
+            .Or(Parse.String("mi").Select(x => JapaneseSyllable.Mi))
+            .Or(Parse.String("mu").Select(x => JapaneseSyllable.Mu))
+            .Or(Parse.String("me").Select(x => JapaneseSyllable.Me))
+            .Or(Parse.String("mo").Select(x => JapaneseSyllable.Mo));
+
+        private static readonly Parser<JapaneseSyllable> rSyllables =
+            Parse.String("ra").Select(x => JapaneseSyllable.Ra)
+            .Or(Parse.String("ri").Select(x => JapaneseSyllable.Ri))
+            .Or(Parse.String("ru").Select(x => JapaneseSyllable.Ru))
+            .Or(Parse.String("re").Select(x => JapaneseSyllable.Re))
+            .Or(Parse.String("ro").Select(x => JapaneseSyllable.Ro));
+
+        private static readonly Parser<JapaneseSyllable> ySyllables =
+            Parse.String("ya").Select(x => JapaneseSyllable.Ya)
+            .Or(Parse.String("yu").Select(x => JapaneseSyllable.Yu))
+            .Or(Parse.String("yo").Select(x => JapaneseSyllable.Yo));
+
+        private static readonly Parser<JapaneseSyllable> wSyllables =
+            Parse.String("wa").Select(x => JapaneseSyllable.Wa)
+            .Or(Parse.String("wo").Select(x => JapaneseSyllable.Wo));
+
+        private static readonly Parser<JapaneseSyllable> nnSyllable =
+            Parse.String("n").Select(x => JapaneseSyllable.N);
+
         private static readonly Parser<JapaneseSyllable> Syllable =
             longOSyllables
-            .Or(shortSyllables)
             .Or(kSyllables)
             .Or(gSyllables)
             .Or(tSyllables)
             .Or(dSyllables)
             .Or(sSyllables)
-            .Or(zSyllables);
+            .Or(zSyllables)
+            .Or(nSyllables)
+            .Or(hSyllables)
+            .Or(bSyllables)
+            .Or(pSyllables)
+            .Or(mSyllables)
+            .Or(rSyllables)
+            .Or(ySyllables)    
+            .Or(wSyllables)
+            .Or(shortSyllables)
+            .Or(nnSyllable);
 
         private static readonly Parser<Term> Term = Syllable.AtLeastOnce().Select(x => new Term { Syllables = x });
 

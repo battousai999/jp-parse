@@ -56,6 +56,56 @@ namespace battousai.jpParse
             { JapaneseSyllable.Zo,  "ぞ" },
             { JapaneseSyllable.Zou, "ぞう" },
 
+            { JapaneseSyllable.Na, "な" },
+            { JapaneseSyllable.Ni, "に" },
+            { JapaneseSyllable.Nu, "ぬ" },
+            { JapaneseSyllable.Ne, "ね" },
+            { JapaneseSyllable.No, "の" },
+            { JapaneseSyllable.Nou, "のう" },
+
+            { JapaneseSyllable.Ha, "は" },
+            { JapaneseSyllable.Hi, "ひ" },
+            { JapaneseSyllable.Fu, "ふ" },
+            { JapaneseSyllable.He, "へ" },
+            { JapaneseSyllable.Ho, "ほ" },
+            { JapaneseSyllable.Hou, "ほう" },
+
+            { JapaneseSyllable.Ba, "ば" },
+            { JapaneseSyllable.Bi, "び" },
+            { JapaneseSyllable.Bu, "ぶ" },
+            { JapaneseSyllable.Be, "べ" },
+            { JapaneseSyllable.Bo, "ぼ" },
+            { JapaneseSyllable.Bou, "ぼう" },
+
+            { JapaneseSyllable.Pa, "ぱ" },
+            { JapaneseSyllable.Pi, "ぴ" },
+            { JapaneseSyllable.Pu, "ぷ" },
+            { JapaneseSyllable.Pe, "ぺ" },
+            { JapaneseSyllable.Po, "ぽ" },
+            { JapaneseSyllable.Pou, "ぽう" },
+
+            { JapaneseSyllable.Ma, "ま" },
+            { JapaneseSyllable.Mi, "み" },
+            { JapaneseSyllable.Mu, "む" },
+            { JapaneseSyllable.Me, "め" },
+            { JapaneseSyllable.Mo, "も" },
+            { JapaneseSyllable.Mou, "もう" },
+
+            { JapaneseSyllable.Ra, "ら" },
+            { JapaneseSyllable.Ri, "り" },
+            { JapaneseSyllable.Ru, "る" },
+            { JapaneseSyllable.Re, "れ" },
+            { JapaneseSyllable.Ro, "ろ" },
+            { JapaneseSyllable.Rou, "ろう" },
+
+            { JapaneseSyllable.Ya, "や" },
+            { JapaneseSyllable.Yu, "ゆ" },
+            { JapaneseSyllable.Yo, "よ" },
+            { JapaneseSyllable.You, "よう" },
+
+            { JapaneseSyllable.Wa, "わ" },
+            { JapaneseSyllable.Wo, "を" },
+            { JapaneseSyllable.N, "ん" }
         };
 
         public static string Map(JapaneseSyllable syllable)

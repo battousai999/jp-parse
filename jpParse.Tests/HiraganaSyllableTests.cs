@@ -534,9 +534,345 @@ namespace jpParse_core.Tests
         }
 
         [Fact]
+        public void CanParse_Gya()
+        {
+            CheckParse("gya", "ぎゃ");
+        }
+
+        [Fact]
+        public void CanParse_Gyu()
+        {
+            CheckParse("gyu", "ぎゅ");
+        }
+
+        [Fact]
+        public void CanParse_Gyo()
+        {
+            CheckParse("gyo", "ぎょ");
+        }
+
+        [Fact]
+        public void CanParse_Nya()
+        {
+            CheckParse("nya", "にゃ");
+        }
+
+        [Fact]
+        public void CanParse_Nyu()
+        {
+            CheckParse("nyu", "にゅ");
+        }
+
+        [Fact]
+        public void CanParse_Nyo()
+        {
+            CheckParse("nyo", "にょ");
+        }
+
+        [Fact]
+        public void CanParse_Hya()
+        {
+            CheckParse("hya", "ひゃ");
+        }
+
+        [Fact]
+        public void CanParse_Hyu()
+        {
+            CheckParse("hyu", "ひゅ");
+        }
+
+        [Fact]
+        public void CanParse_Hyo()
+        {
+            CheckParse("hyo", "ひょ");
+        }
+
+        [Fact]
+        public void CanParse_Bya()
+        {
+            CheckParse("bya", "びゃ");
+        }
+
+        [Fact]
+        public void CanParse_Byu()
+        {
+            CheckParse("byu", "びゅ");
+        }
+
+        [Fact]
+        public void CanParse_Byo()
+        {
+            CheckParse("byo", "びょ");
+        }
+
+        [Fact]
+        public void CanParse_Pya()
+        {
+            CheckParse("pya", "ぴゃ");
+        }
+
+        [Fact]
+        public void CanParse_Pyu()
+        {
+            CheckParse("pyu", "ぴゅ");
+        }
+
+        [Fact]
+        public void CanParse_Pyo()
+        {
+            CheckParse("pyo", "ぴょ");
+        }
+
+        [Fact]
+        public void CanParse_Mya()
+        {
+            CheckParse("mya", "みゃ");
+        }
+
+        [Fact]
+        public void CanParse_Myu()
+        {
+            CheckParse("myu", "みゅ");
+        }
+
+        [Fact]
+        public void CanParse_Myo()
+        {
+            CheckParse("myo", "みょ");
+        }
+
+        [Fact]
+        public void CanParse_Rya()
+        {
+            CheckParse("rya", "りゃ");
+        }
+
+        [Fact]
+        public void CanParse_Ryu()
+        {
+            CheckParse("ryu", "りゅ");
+        }
+
+        [Fact]
+        public void CanParse_Ryo()
+        {
+            CheckParse("ryo", "りょ");
+        }
+
+        [Fact]
+        public void CanParse_Ja()
+        {
+            CheckParse("ja", "じゃ");
+        }
+
+        [Fact]
+        public void CanParse_Ju()
+        {
+            CheckParse("ju", "じゅ");
+        }
+
+        [Fact]
+        public void CanParse_Jo()
+        {
+            CheckParse("jo", "じょ");
+        }
+
+        [Fact]
+        public void CanParse_Cha()
+        {
+            CheckParse("cha", "ちゃ");
+        }
+
+        [Fact]
+        public void CanParse_Chu()
+        {
+            CheckParse("chu", "ちゅ");
+        }
+
+        [Fact]
+        public void CanParse_Cho()
+        {
+            CheckParse("cho", "ちょ");
+        }
+
+        [Fact]
+        public void CanParse_Sha()
+        {
+            CheckParse("sha", "しゃ");
+        }
+
+        [Fact]
+        public void CanParse_Shu()
+        {
+            CheckParse("shu", "しゅ");
+        }
+
+        [Fact]
+        public void CanParse_Sho()
+        {
+            CheckParse("sho", "しょ");
+        }
+
+        [Fact]
+        public void CanParse_Kka()
+        {
+            CheckParse("kka", "っか");
+        }
+
+        [Fact]
+        public void CanParse_Kki()
+        {
+            CheckParse("kki", "っき");
+        }
+
+        [Fact]
+        public void CanParse_Kku()
+        {
+            CheckParse("kku", "っく");
+        }
+
+        [Fact]
+        public void CanParse_Kke()
+        {
+            CheckParse("kke", "っけ");
+        }
+
+        [Fact]
+        public void CanParse_Kko()
+        {
+            CheckParse("kko", "っこ");
+        }
+
+        [Fact]
+        public void CanParse_Ssa()
+        {
+            CheckParse("ssa", "っさ");
+        }
+
+        [Fact]
+        public void CanParse_Ssi()
+        {
+            CheckParse("sshi", "っし");
+        }
+
+        [Fact]
+        public void CanParse_Ssu()
+        {
+            CheckParse("ssu", "っす");
+        }
+
+        [Fact]
+        public void CanParse_Sse()
+        {
+            CheckParse("sse", "っせ");
+        }
+
+        [Fact]
+        public void CanParse_Sso()
+        {
+            CheckParse("sso", "っそ");
+        }
+
+        [Fact]
+        public void CanParse_Tta()
+        {
+            CheckParse("tta", "った");
+        }
+
+        [Fact]
+        public void CanParse_Cchi()
+        {
+            CheckParse("cchi", "っち");
+        }
+
+        [Fact]
+        public void CanParse_Ttsu()
+        {
+            CheckParse("ttsu", "っつ");
+        }
+
+        [Fact]
+        public void CanParse_Tte()
+        {
+            CheckParse("tte", "って");
+        }
+
+        [Fact]
+        public void CanParse_Tto()
+        {
+            CheckParse("tto", "っと");
+        }
+        
+        [Fact]
+        public void CanParse_Bba()
+        {
+            CheckParse("bba", "っば");
+        }
+
+        [Fact]
+        public void CanParse_Bbi()
+        {
+            CheckParse("bbi", "っび");
+        }
+
+        [Fact]
+        public void CanParse_Bbu()
+        {
+            CheckParse("bbu", "っぶ");
+        }
+
+        [Fact]
+        public void CanParse_Bbe()
+        {
+            CheckParse("bbe", "っべ");
+        }
+
+        [Fact]
+        public void CanParse_Bbo()
+        {
+            CheckParse("bbo", "っぼ");
+        }
+
+        [Fact]
+        public void CanParse_Ppa()
+        {
+            CheckParse("ppa", "っぱ");
+        }
+
+        [Fact]
+        public void CanParse_Ppi()
+        {
+            CheckParse("ppi", "っぴ");
+        }
+
+        [Fact]
+        public void CanParse_Ppu()
+        {
+            CheckParse("ppu", "っぷ");
+        }
+
+        [Fact]
+        public void CanParse_Ppe()
+        {
+            CheckParse("ppe", "っぺ");
+        }
+
+        [Fact]
+        public void CanParse_Ppo()
+        {
+            CheckParse("ppo", "っぽ");
+        }
+
+        [Fact]
         public void CanParseMultipleSyllables()
         {
             CheckParse("ako", "あこ");
+        }
+
+        [Fact]
+        public void CanParseMultipleSyllablesIncludingSokuons()
+        {
+            CheckParse("battousai", "ばっとうさい");
         }
 
         [Fact]

@@ -110,6 +110,76 @@ namespace battousai.jpParse
             { JapaneseSyllable.Kya, "きゃ" },
             { JapaneseSyllable.Kyu, "きゅ" },
             { JapaneseSyllable.Kyo, "きょ" },
+
+            { JapaneseSyllable.Gya, "ぎゃ" },
+            { JapaneseSyllable.Gyu, "ぎゅ" },
+            { JapaneseSyllable.Gyo, "ぎょ" },
+
+            { JapaneseSyllable.Nya, "にゃ" },
+            { JapaneseSyllable.Nyu, "にゅ" },
+            { JapaneseSyllable.Nyo, "にょ" },
+
+            { JapaneseSyllable.Hya, "ひゃ" },
+            { JapaneseSyllable.Hyu, "ひゅ" },
+            { JapaneseSyllable.Hyo, "ひょ" },
+
+            { JapaneseSyllable.Bya, "びゃ" },
+            { JapaneseSyllable.Byu, "びゅ" },
+            { JapaneseSyllable.Byo, "びょ" },
+
+            { JapaneseSyllable.Pya, "ぴゃ" },
+            { JapaneseSyllable.Pyu, "ぴゅ" },
+            { JapaneseSyllable.Pyo, "ぴょ" },
+
+            { JapaneseSyllable.Mya, "みゃ" },
+            { JapaneseSyllable.Myu, "みゅ" },
+            { JapaneseSyllable.Myo, "みょ" },
+
+            { JapaneseSyllable.Rya, "りゃ" },
+            { JapaneseSyllable.Ryu, "りゅ" },
+            { JapaneseSyllable.Ryo, "りょ" },
+
+            { JapaneseSyllable.Ja, "じゃ" },
+            { JapaneseSyllable.Ju, "じゅ" },
+            { JapaneseSyllable.Jo, "じょ" },
+
+            { JapaneseSyllable.Cha, "ちゃ" },
+            { JapaneseSyllable.Chu, "ちゅ" },
+            { JapaneseSyllable.Cho, "ちょ" },
+
+            { JapaneseSyllable.Sha, "しゃ" },
+            { JapaneseSyllable.Shu, "しゅ" },
+            { JapaneseSyllable.Sho, "しょ" },
+
+            { JapaneseSyllable.Kka, "っか" },
+            { JapaneseSyllable.Kki, "っき" },
+            { JapaneseSyllable.Kku, "っく" },
+            { JapaneseSyllable.Kke, "っけ" },
+            { JapaneseSyllable.Kko, "っこ" },
+
+            { JapaneseSyllable.Ssa, "っさ" },
+            { JapaneseSyllable.Sshi, "っし" },
+            { JapaneseSyllable.Ssu, "っす" },
+            { JapaneseSyllable.Sse, "っせ" },
+            { JapaneseSyllable.Sso, "っそ" },
+
+            { JapaneseSyllable.Tta, "った" },
+            { JapaneseSyllable.Cchi, "っち" },
+            { JapaneseSyllable.Ttsu, "っつ" },
+            { JapaneseSyllable.Tte, "って" },
+            { JapaneseSyllable.Tto, "っと" },
+
+            { JapaneseSyllable.Bba, "っば" },
+            { JapaneseSyllable.Bbi, "っび" },
+            { JapaneseSyllable.Bbu, "っぶ" },
+            { JapaneseSyllable.Bbe, "っべ" },
+            { JapaneseSyllable.Bbo, "っぼ" },
+
+            { JapaneseSyllable.Ppa, "っぱ" },
+            { JapaneseSyllable.Ppi, "っぴ" },
+            { JapaneseSyllable.Ppu, "っぷ" },
+            { JapaneseSyllable.Ppe, "っぺ" },
+            { JapaneseSyllable.Ppo, "っぽ" },
         };
 
         public static string Map(JapaneseSyllable syllable)

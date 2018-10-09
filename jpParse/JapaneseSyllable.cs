@@ -90,7 +90,6 @@ namespace battousai.jpParse
         Wa,
         Wo,
         N,
-
         Kya,
         Kyu,
         Kyo,
@@ -135,7 +134,7 @@ namespace battousai.jpParse
         Sse,
         Sso,
         Tta,
-        Tchi,
+        Cchi,
         Ttsu,
         Tte,
         Tto,

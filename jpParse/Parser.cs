@@ -7,15 +7,15 @@ namespace battousai.jpParse
 {
     public static class NihonParser
     {
-        public static string ToHiragana(string text)
+        public static string ToHiragana(string text, bool isWordSpacing = false)
         {
             if (String.IsNullOrWhiteSpace(text))
                 return text;
 
-            return GetTerms(HiraganaMapper.Map).Parse(text.ToLower());
+            return GetTerms(HiraganaMapper.Map, isWordSpacing).Parse(text.ToLower());
         }
 
-        private static Parser<string> GetTerms(Func<JapaneseSyllable, string> mapper)
+        private static Parser<string> GetTerms(Func<JapaneseSyllable, string> mapper, bool isWordSpacing = false)
         {
             Func<string, IEnumerable<string>, string> join = (delimiter, list) => String.Join(delimiter, list);
 
@@ -24,7 +24,7 @@ namespace battousai.jpParse
                 {
                     var words = termSet.Terms.Select(term => join("", term.Syllables.Select(x => mapper(x))));
 
-                    return join(" ", words);
+                    return join((isWordSpacing ? " " : ""), words);
                 });
         }
 

@@ -6,9 +6,9 @@ namespace jpParse_core.Tests
 {
     public class HiraganaSyllableTests
     {
-        private void CheckParse(string roumaji, string hiragana)
+        private void CheckParse(string roumaji, string hiragana, bool isWordSpacing = false)
         {
-            Assert.Equal(hiragana, NihonParser.ToHiragana(roumaji));
+            Assert.Equal(hiragana, NihonParser.ToHiragana(roumaji, isWordSpacing));
         }
 
         [Fact]
@@ -878,13 +878,25 @@ namespace jpParse_core.Tests
         [Fact]
         public void CanParseMultipleWords1()
         {
-            CheckParse("atoka itedo", "あとか いてど");
+            CheckParse("atoka itedo", "あとか いてど", true);
         }
 
         [Fact]
         public void CanParseMultipleWords2()
         {
-            CheckParse("katsu getou akate", "かつ げとう あかて");
+            CheckParse("katsu getou akate", "かつ げとう あかて", true);
+        }
+
+        [Fact]
+        public void CanParseMultipleWordsCollapsingSpaces1()
+        {
+            CheckParse("atoka itedo", "あとかいてど");
+        }
+
+        [Fact]
+        public void CanParseMultipleWordsCollapsingSpaces2()
+        {
+            CheckParse("katsu getou akate", "かつげとうあかて");
         }
 
         [Fact]

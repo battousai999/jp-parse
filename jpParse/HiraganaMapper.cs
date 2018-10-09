@@ -105,7 +105,11 @@ namespace battousai.jpParse
 
             { JapaneseSyllable.Wa, "わ" },
             { JapaneseSyllable.Wo, "を" },
-            { JapaneseSyllable.N, "ん" }
+            { JapaneseSyllable.N, "ん" },
+
+            { JapaneseSyllable.Kya, "きゃ" },
+            { JapaneseSyllable.Kyu, "きゅ" },
+            { JapaneseSyllable.Kyo, "きょ" },
         };
 
         public static string Map(JapaneseSyllable syllable)

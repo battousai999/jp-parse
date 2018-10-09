@@ -28,7 +28,8 @@ namespace battousai.jpParse
                 });
         }
 
-        private static readonly Parser<JapaneseSyllable> longOSyllables = Parse.String("kou").Select(x => JapaneseSyllable.Kou)
+        private static readonly Parser<JapaneseSyllable> longOSyllables = 
+            Parse.String("kou").Select(x => JapaneseSyllable.Kou)
             .Or(Parse.String("gou").Select(x => JapaneseSyllable.Gou))
             .Or(Parse.String("tou").Select(x => JapaneseSyllable.Tou))
             .Or(Parse.String("dou").Select(x => JapaneseSyllable.Dou))
@@ -41,6 +42,11 @@ namespace battousai.jpParse
             .Or(Parse.String("mou").Select(x => JapaneseSyllable.Mou))
             .Or(Parse.String("rou").Select(x => JapaneseSyllable.Rou))
             .Or(Parse.String("you").Select(x => JapaneseSyllable.You));
+
+        private static readonly Parser<JapaneseSyllable> digraphs =
+            Parse.String("kya").Select(x => JapaneseSyllable.Kya)
+            .Or(Parse.String("kyu").Select(x => JapaneseSyllable.Kyu))
+            .Or(Parse.String("kyo").Select(x => JapaneseSyllable.Kyo));
 
         private static readonly Parser<JapaneseSyllable> shortSyllables =
             Parse.String("a").Select(x => JapaneseSyllable.A)
@@ -147,6 +153,7 @@ namespace battousai.jpParse
 
         private static readonly Parser<JapaneseSyllable> Syllable =
             longOSyllables
+            .Or(digraphs)
             .Or(kSyllables)
             .Or(gSyllables)
             .Or(tSyllables)

@@ -147,6 +147,6 @@ namespace battousai.jpParse
         Ppi,
         Ppu,
         Ppe,
-        Ppo
+        Ppo,
     }
 }

@@ -2,7 +2,7 @@
 using Xunit;
 using battousai.jpParse;
 
-namespace jpParse_core.Tests
+namespace jpParse.Tests
 {
     public class HiraganaSyllableTests
     {

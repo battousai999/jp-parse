@@ -15,6 +15,14 @@ namespace battousai.jpParse
             return GetTerms(HiraganaMapper.Map, isWordSpacing).Parse(text.ToLower());
         }
 
+        public static string ToKatakana(string text, bool isWordSpacing = false)
+        {
+            if (String.IsNullOrWhiteSpace(text))
+                return text;
+
+            return GetTerms(KatakanaMapper.Map, isWordSpacing).Parse(text.ToLower());
+        }
+
         private static Parser<string> GetTerms(Func<JapaneseSyllable, string> mapper, bool isWordSpacing = false)
         {
             Func<string, IEnumerable<string>, string> join = (delimiter, list) => String.Join(delimiter, list);

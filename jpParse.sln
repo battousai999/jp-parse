@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jpParse", "jpParse\jpParse.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jpParse.Tests", "jpParse.Tests\jpParse.Tests.csproj", "{23F35341-C79F-4AF4-89FF-0E663F5CD2EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "convert-romaji", "convert-romaji\convert-romaji.csproj", "{A2B44FA2-0344-42B5-8D8F-4AF800600B3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{23F35341-C79F-4AF4-89FF-0E663F5CD2EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23F35341-C79F-4AF4-89FF-0E663F5CD2EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23F35341-C79F-4AF4-89FF-0E663F5CD2EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2B44FA2-0344-42B5-8D8F-4AF800600B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2B44FA2-0344-42B5-8D8F-4AF800600B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2B44FA2-0344-42B5-8D8F-4AF800600B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2B44FA2-0344-42B5-8D8F-4AF800600B3C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
